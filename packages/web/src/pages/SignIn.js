@@ -16,10 +16,8 @@ export default function SingIn() {
                 email,
                 pwd
             })
-        }).then((response) => response.json())
-          .then((data) => {
-              console.log('Success!', data);
-          })
+        }).then((response) => response.json()) //testar sem colchetes dps
+          .then((data) => console.log('Success!', data))
     }
 
     const handleEmailChange = (event) => setEmail(event.target.value);
